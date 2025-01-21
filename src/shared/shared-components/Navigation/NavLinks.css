@@ -1,0 +1,76 @@
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 1rem;
+}
+
+.nav-links a {
+  color: #ffffff; /* White color for text */
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+  border: none; /* Remove border */
+}
+
+.nav-links a:hover,
+.nav-links a:active,
+.nav-links a.active {
+  background: #607d8b; /* Slate blue-gray background for hover/active */
+  color: white; /* White text on hover/active */
+}
+
+.nav-links button {
+  cursor: pointer;
+  color: #ffffff; /* White text */
+  background: transparent;
+  padding: 0.5rem;
+  font: inherit;
+  transition: all 0.3s ease;
+  border: none; /* Remove border */
+}
+
+.nav-links button:focus {
+  outline: none;
+}
+
+.nav-links button:hover,
+.nav-links button:active {
+  background: #607d8b; /* Slate blue-gray background for hover/active */
+  color: white; /* White text */
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .nav-links li {
+    margin: 0 0.5rem;
+  }
+
+  .nav-links a {
+    color: white; /* White text for larger screens */
+    text-decoration: none;
+  }
+
+  .nav-links button {
+    color: white; /* White text */
+    background: transparent;
+  }
+
+  .nav-links button:hover,
+  .nav-links button:active {
+    background: #607d8b; /* Slate blue-gray background on hover/active */
+    color: white; /* White text */
+  }
+}
