@@ -1,0 +1,153 @@
+.main-loki {
+    flex: 1;
+    padding-bottom: 15vh;
+    position: relative;
+    color: #f0f4f9;
+  }
+  
+  .main-container-loki {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-box-loki {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #3a3a3a;
+    padding: 15px 30px;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  .search-box-loki img {
+    width: 24px;
+    cursor: pointer;
+  }
+  
+  .search-box-loki input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+  }
+  
+  .result-loki {
+    padding: 0px 5%;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  
+  .result-loki::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .result-title-loki {
+    margin: 40px 0px;
+  }
+  
+  .result-data-loki {
+    display: flex;
+    align-items: start;
+  }
+  
+  .loader-loki {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    align-items: flex-start;
+  }
+  
+  .result-data-loki p{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+
+  .loader-loki hr {
+    border: none;
+    height: 15px;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #9ed7ff, #ffffff, #9ed7ff);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite linear;
+    border-radius: 4px;
+    width: 100%;
+    animation: loader-loki 3s infinite linear;
+  }
+
+  @keyframes loader-loki{
+    0%{
+        background-position: -800px 0px;
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+  }
+  
+  @media(max-width:600px){
+    .search-box-loki input{
+        flex:none;
+        width:15px;
+    }
+    .search-box-loki{
+        padding: 5px 10px;
+    }
+    .search-box-loki div{
+        gap:5px;
+    }
+    .search-box-loki img{
+        width: 20px;
+    }
+}
+
+.search-box-loki textarea {
+  resize: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 18px;
+  width: 100%;
+  max-height: 140px; 
+  overflow-y: auto;
+  color: white;
+  line-height: 1.4;
+  font-family: inherit;
+}
+
+.search-box-loki textarea::-webkit-scrollbar {
+  width: 6px;
+}
+
+.search-box-loki textarea::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.search-box-loki textarea::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.main-container-loki .images-loki{
+  padding-top: 20px;
+  width: 100px;
+  padding-left: 20px;
+}

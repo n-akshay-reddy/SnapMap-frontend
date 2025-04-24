@@ -14,7 +14,8 @@ html {
 
 body {
   margin: 0;
-  background: #e0f7fa;
+  background: black;
+  background-image: url('../public/pattern.png');
   
 }
 

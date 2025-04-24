@@ -18,7 +18,9 @@ const Users = () => {
                 const responseData = await sendRequest(`https://snapmap-backend.onrender.com/api/users`);
                 
             setLoadedUsers(responseData.users);
-            } catch(err){};
+            } catch(err){
+                console.log("Could not fetch");
+            };
             
         };
         fetchUsers();

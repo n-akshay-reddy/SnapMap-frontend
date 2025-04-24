@@ -6,17 +6,15 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: #0277bd; /* Deep blue background */
-  color: white; /* White text for contrast */
+  background: black; 
+  color: white;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
   padding: 0 1rem;
   z-index: 5;
-  transition: background 0.3s ease; /* Smooth transition for background color */
+  transition: background 0.3s ease; 
 }
 
-.main-header:hover {
-  background: #0288d1; /* Lighter blue on hover */
-}
+
 
 main {
   margin-top: 5rem;

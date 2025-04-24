@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { useNavigate } from 'react-router-dom'; // Updated import
+import { useNavigate } from 'react-router-dom';
 
 import Input from '../../shared/shared-components/FormElements/Input';
 import Button from '../../shared/shared-components/FormElements/Button.jsx';
@@ -38,7 +38,7 @@ const NewPlace = () => {
     false
   );
 
-  const navigate = useNavigate(); // Replaced useHistory with useNavigate
+  const navigate = useNavigate(); 
 
   const placeSubmitHandler = async (event) => {
     event.preventDefault();
@@ -53,7 +53,7 @@ const NewPlace = () => {
       await sendRequest('https://snapmap-backend.onrender.com/api/places','POST',formData, {
         Authorization: 'Bearer ' + auth.token
       });
-      navigate('/'); // Replaced history.push with navigate
+      navigate('/'); 
     } catch (err) {}
   };
 

@@ -14,16 +14,16 @@
   display: block;
   width: 3rem;
   height: 2.5px;
-  background: #ffffff; /* White color for the hamburger icon */
+  background: #ffffff; 
 }
 
 .main-navigation__title {
-  color: white; /* White title for contrast */
+  color: white; 
 }
 
 .main-navigation__title a {
   text-decoration: none;
-  color: #ffffff; /* White link text */
+  color: #ffffff; 
 }
 
 .main-navigation__header-nav {
@@ -32,7 +32,8 @@
 
 .main-navigation__drawer-nav {
   height: 100%;
-  background: #0277bd; /* Deep blue background for the drawer */
+  background: #1e1e1e; 
+  border-right: 1px solid #2a2a2a;
 }
 
 @media (min-width: 768px) {

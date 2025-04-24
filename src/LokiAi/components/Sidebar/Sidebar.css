@@ -1,0 +1,73 @@
+.sidebar-loki {
+    min-height: calc(100vh - 80px);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.08);
+    color: white;
+    padding: 20px;
+  }
+  
+  .sidebar-loki img {
+    width: 20px;
+  }
+  
+  .sidebar-loki .menu-loki {
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .sidebar-loki .menu-loki:hover {
+    border-color: #00e5ff;
+    box-shadow: 0 0 8px #00e5ff;
+  }
+  
+  .sidebar-loki .new-chat-loki {
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 7px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .sidebar-loki .recent-loki {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-loki .recent-title-loki {
+    margin-top: 20px;
+  }
+  
+  .sidebar-loki .recent-entry-loki {
+    display: flex;
+    align-items: center;
+    padding: 6px 0; 
+    margin: 0;
+    color: white;
+    cursor: pointer;
+  }
+
+  .sidebar-loki .recent-entry-loki p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar-loki .recent-entry-loki:hover {
+    background-color: #444;
+    border-radius: 5px;
+  }
+  
+  
+  
+  
+  @media (max-width: 600px) {
+    .sidebar-loki {
+      display: none;
+    }
+  }
+  

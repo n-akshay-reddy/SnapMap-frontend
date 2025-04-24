@@ -1,11 +1,112 @@
 .place-form {
-    list-style: none;
-    margin: 0 auto;
-    padding: 1rem;
-    width: 90%;
-    max-width: 40rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-    border-radius: 6px;
-    background: white;
-  }
-  
+  list-style: none;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 90%;
+  max-width: 40rem;
+  background: linear-gradient(145deg, #1e1e1e, #2c2c2c) !important;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.place-form h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.place-form input,
+.place-form textarea,
+.place-form select {
+  background-color: #1a1a1a;  /* Ensure input background remains dark */
+  border: 1px solid #444;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  width: 100%;
+  margin-bottom: 1.2rem;
+  outline: none;
+}
+
+.place-form input:focus,
+.place-form textarea:focus,
+.place-form select:focus,
+.place-form input[type="file"]:focus {
+  background-color: #1a1a1a;  
+  border-color: #00e5ff;
+  box-shadow: 0 0 8px #00e5ff;  
+}
+
+.place-form button {
+  background: #222;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #555;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.place-form button:hover {
+  background-color: #00e5ff;
+  color: #000;
+  border-color: #00e5ff;
+  box-shadow: 0 0 12px #00e5ff;
+}
+
+.place-form button.inverse {
+  background: transparent;
+  border: 1px solid #00e5ff;
+  color: #00e5ff;
+}
+
+.place-form button.inverse:hover {
+  background-color: #00e5ff;
+  color: #000;
+  box-shadow: 0 0 10px #00e5ff;
+}
+
+.place-form .loading-spinner__overlay {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+
+.place-form .image-upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.place-form input[type="file"] {
+  background-color: #1a1a1a;  
+  border: 1px solid #444;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+}
+
+.place-form input[type="file"]:focus {
+  background-color: #1a1a1a;  
+  border-color: #00e5ff;
+  box-shadow: 0 0 8px #00e5ff;
+}

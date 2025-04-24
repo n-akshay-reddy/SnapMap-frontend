@@ -62,6 +62,14 @@ const PlaceItem = (props) => {
                     <div className='place-item__actions'>
                         {auth.userId === props.creatorId && <Button to={`/places/${props.id}`}>EDIT</Button>}
                         {auth.userId === props.creatorId && <Button danger onClick={showDeleteWarningModal}>DELETE</Button>}
+                        {auth.userId !== props.creatorId && <Button  to="/lokiai" 
+                        state={{
+                            title: props.title,
+                            description: props.description,
+                            address: props.address,
+                            image: props.image,
+                          }}
+                          >Know More</Button>}
                     </div>
                 </Card>
             </li>

@@ -7,7 +7,6 @@ export const useAuth = () => {
   const [userId, setUserId] = useState(false);
   const [tokenExpirationDate, setTokenExpirationDate] = useState();
 
-  // Login function to set token and user data in state and localStorage
   const login = useCallback((uid, token, expirationDate) => {
     setToken(token);
     setUserId(uid);
@@ -20,7 +19,6 @@ export const useAuth = () => {
     }));
   }, []);
 
-  // Logout function to clear the data from state and localStorage
   const logout = useCallback(() => {
     setToken(null);
     setUserId(null);
@@ -28,7 +26,6 @@ export const useAuth = () => {
     localStorage.removeItem('userData');
   }, []);
 
-  // Auto-logout based on token expiration
   useEffect(() => {
     if (token && tokenExpirationDate) {
       const remainingTime = tokenExpirationDate.getTime() - new Date().getTime();
@@ -38,7 +35,6 @@ export const useAuth = () => {
     }
   }, [token, logout, tokenExpirationDate]);
 
-  // Effect to check and restore data from localStorage on initial load or page refresh
   useEffect(() => {
     const storedData = JSON.parse(localStorage.getItem('userData'));
     if (storedData && storedData.token) {
@@ -47,7 +43,7 @@ export const useAuth = () => {
         login(storedData.userId, storedData.token, storedExpirationDate);
       } else {
         console.log("Token has expired");
-        logout(); // Ensure logout is triggered if the token has expired
+        logout(); 
       }
     } else {
       console.log("No valid token found in localStorage");
